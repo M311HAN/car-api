@@ -4,7 +4,7 @@ I have deployed the app using GitHub Pages. Check out the live demo below:
 
 - GitHub Pages: [here](https://M311HAN.github.io/car-api/)
 
-![Car List](public/carapi.png)
+![Car List](frontend/public/carapi.png)
 
 
 This project is a frontend application built with React for managing a list of cars. It interacts with a backend API to perform CRUD operations (Create, Read, Update, Delete) on the list of cars. You can view the `screenshots` folder to see how i refactored this project and also used mocha and chai for testing. You can also view my `reports.txt` file to which goes into depth on refactoring this project.
