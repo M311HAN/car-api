@@ -1,0 +1,130 @@
+/* Import google font for headers */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  /* Allow scrolling */
+  overflow: auto;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/background.jpg");
+  background-size: cover;
+  /* Ensures the background image stays fixed */
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+  padding: 20px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  margin: 20px auto;
+}
+
+li {
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* Slightly transparent background for car details */
+  background: rgba(255, 255, 255, 0.14);
+  /* Black text color for car details */
+  color: rgb(0, 0, 0);
+}
+
+.car-image {
+  /* Fixed width for car images */
+  width: 300px;
+  /* Maintain aspect ratio */
+  height: auto;
+}
+
+.car-details {
+  /* Larger font size for car details */
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* White outline for text */
+  text-shadow: 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff,
+    -2px -2px 0 #fff;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  /* Blue background for buttons */
+  background-color: #007bff;
+  /* White text color for buttons */
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  /* Standard font size for buttons */
+  font-size: 1rem;
+}
+
+button:hover {
+  /* Darker blue on hover */
+  background-color: #0056b3;
+}
+
+.title {
+  /* Custom font for titles */
+  font-family: "Bangers", cursive;
+  font-size: 2.5rem;
+  /* Red color for titles */
+  color: #e41f26;
+  text-transform: uppercase;
+  /* Black outline for titles */
+  text-shadow: 2px 2px 4px black;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.seats-input {
+  display: flex;
+  /* Center-align the label and input */
+  align-items: center;
+}
+
+.seats-label {
+  /* Small margin between label and input */
+  margin-left: 0.5rem;
+}
+
+.add-car-container {
+  display: flex;
+  /* Center-align the add car form */
+  justify-content: center;
+  align-items: center;
+  /* Space between form elements */
+  gap: 10px;
+  margin-top: 20px;
+  /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
+  /* Bottom margin for spacing */
+  margin-bottom: 70px;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
