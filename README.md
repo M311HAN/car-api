@@ -1,9 +1,5 @@
 # Car Management Frontend
 
-I have deployed the app using GitHub Pages. Check out the live demo below:
-
-- GitHub Pages: [here](https://M311HAN.github.io/car-api/)
-
 ![Car List](frontend/public/carapi.png)
 
 
