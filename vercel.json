@@ -23,6 +23,6 @@
         "dest": "/frontend/build/$1"
       }
     ]
-  }
+  }  
   
   
