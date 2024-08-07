@@ -2,7 +2,8 @@
     "name": "car-api-root",
     "version": "1.0.0",
     "scripts": {
-      "build": "cd frontend && npm install && npm run build && cd ../backend && npm install"
+      "install-all": "npm install --prefix frontend && npm install --prefix backend",
+      "build": "cd frontend && npm run build && cd ../backend && npm install"
     }
   }
   
