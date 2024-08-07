@@ -6,21 +6,21 @@
       {
         "src": "frontend/package.json",
         "use": "@vercel/static-build",
-        "config": { "distDir": "public" }
+        "config": { "distDir": "frontend/build" }
       },
       {
-        "src": "backend/src/api/car_server.js",
+        "src": "backend/car_server.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "backend/src/api/car_server.js"
+        "dest": "backend/car_server.js"
       },
       {
         "src": "/(.*)",
-        "dest": "/public/$1"
+        "dest": "/frontend/build/$1"
       }
     ]
   }
