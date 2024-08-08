@@ -1,33 +1,31 @@
 {
     "version": 2,
     "name": "car-api",
-    "public": false,
     "builds": [
       {
         "src": "frontend/package.json",
         "use": "@vercel/static-build",
-        "config": { "distDir": "frontend/build" }
+        "config": {
+          "distDir": "public"
+        }
       },
       {
         "src": "backend/car_server.js",
         "use": "@vercel/node"
       }
     ],
-    "rewrites": [
+    "routes": [
       {
         "source": "/api/(.*)",
         "destination": "/backend/car_server.js"
       },
       {
-        "source": "^/static/(.*)",
-        "destination": "/frontend/build/static/$1"
-      },
-      {
         "source": "/(.*)",
-        "destination": "/frontend/build/index.html"
+        "destination": "/public/index.html"
       }
     ]
   }
+  
   
   
   
