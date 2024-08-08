@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "./car_server.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/" }
+    ]
+  }
+  
