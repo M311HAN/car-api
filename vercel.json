@@ -13,10 +13,14 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
         "source": "/api/(.*)",
         "destination": "/backend/car_server.js"
+      },
+      {
+        "source": "^/static/(.*)",
+        "destination": "/frontend/build/static/$1"
       },
       {
         "source": "/(.*)",
@@ -24,6 +28,7 @@
       }
     ]
   }
+  
   
   
   
