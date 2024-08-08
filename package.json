@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "scripts": {
       "install-all": "npm install --prefix frontend && npm install --prefix backend",
-      "build": "cd frontend && npm install && npm run build && cd .. && mkdir -p public && cp -r frontend/build/* public/",
-      "postbuild": "cp -r frontend/build/* public/"
+      "build": "cd frontend && npm install && npm run build",
+      "postbuild": "echo Build completed"
     }
   }
   
